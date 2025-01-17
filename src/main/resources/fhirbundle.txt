@@ -1,0 +1,378 @@
+{
+  "resourceType": "Bundle",
+  "id": "2efc8643-743b-4559-9030-f07456970711",
+  "meta": {
+    "lastUpdated": "2016-12-11T00:00:00.000+05:30"
+  },
+  "identifier": {
+    "system": "https://www.max.in/bundle",
+    "value": "2efc8643-743b-4559-9030-f07456970711"
+  },
+  "type": "document",
+  "timestamp": "2016-12-11T00:00:00.000+05:30",
+  "entry": [
+    {
+      "fullUrl": "Composition/23cbf24b-87be-424b-8a3c-f3aa32d6c777",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "23cbf24b-87be-424b-8a3c-f3aa32d6c777",
+        "identifier": {
+          "system": "https://www.max.in/document",
+          "value": "23cbf24b-87be-424b-8a3c-f3aa32d6c777"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "https://projecteka.in/sct",
+              "code": "371530004",
+              "display": "Clinical consultation report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/da4f55cf-cd70-429d-a8c4-baea2e29cf5e"
+        },
+        "encounter": {
+          "reference": "Encounter/3cf12305-4797-4880-820c-1af701521913"
+        },
+        "date": "2016-12-11T00:00:00.605+05:30",
+        "author": [
+          {
+            "reference": "Practitioner/ABHI1234"
+          }
+        ],
+        "title": "HIMS",
+        "section": [
+          {
+            "title": "HIMS REPORT",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://projecteka.in/sct",
+                  "code": "371530004",
+                  "display": "HIMS REPORT"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "DocumentReference/f39604fc-da47-4e09-abb2-e2f4551e5713"
+              }
+            ]
+          },
+          {
+            "title": "ChiefComplaints",
+            "code": {
+              "coding": [
+                {
+                  "system": "https: //www.roojh.com/bundle",
+                  "code": "422843007",
+                  "display": "ChiefComplaintSection"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Condition/55cf9a89-2dfd-47f8-9dca-8df693d4ef8b"
+              },
+              {
+                "reference": "Condition/0eb0ed36-bb9e-40f9-abbf-3038db0568d2"
+              }
+            ]
+          },
+          {
+            "title": "AllergySection",
+            "code": {
+              "coding": [
+                {
+                  "system": "https: //www.roojh.com/bundle",
+                  "code": "722446000",
+                  "display": "AllergyRecord"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "AllergyIntolerance/example"
+              },
+              {
+                "reference": "AllergyIntolerance/medication"
+              }
+            ]
+          },
+          {
+            "title": "PhysicalExamination",
+            "code": {
+              "coding": [
+                {
+                  "system": "https: //www.roojh.com/bundle",
+                  "code": "425044008",
+                  "display": "Physicalexamsection"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Observation/c4a0c88a-63fb-46a5-a560-9dfd8c9afcc4"
+              },
+              {
+                "reference": "Observation/347cdba5-8b40-4144-b29f-01a295784352"
+              }
+            ]
+          },
+          {
+            "title": "Clinicalconsultation",
+            "code": {
+              "coding": [
+                {
+                  "system": "https: //www.roojh.com/bundle",
+                  "code": "371530004",
+                  "display": "Clinicalconsultationreport"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "DocumentReference/f39604fc-da47-4e09-abb2-e2f4551e5713"
+              }
+            ]
+          },
+          {
+            "title": "Procedures",
+            "code": {
+              "coding": [
+                {
+                  "system": "https: //www.roojh.com/bundle",
+                  "code": "371525003",
+                  "display": "Clinicalprocedurereport"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Procedure/3bf80c25-feb5-48aa-84cd-fce761bceeac"
+              }
+            ]
+          },
+          {
+            "title": "PATIENT INFO",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://projecteka.in/sct",
+                  "code": "371530004",
+                  "display": "PATIENT INFO"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Patient/da4f55cf-cd70-429d-a8c4-baea2e29cf5e"
+              }
+            ]
+          },
+          {
+            "title": "CarePlan",
+            "code": {
+              "coding": [
+                {
+                  "system": "https: //www.roojh.com/bundle",
+                  "code": "734163000",
+                  "display": "CarePlan"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "CarePlan/6098a179-5137-40aa-9116-1ce641335607"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Practitioner/ABHI1234",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "ABHI1234",
+        "identifier": [
+          {
+            "system": "https://www.mciindia.in/doctor",
+            "value": "ABHI1234"
+          }
+        ],
+        "name": [
+          {
+            "text": "DR DHANUSH",
+            "prefix": [
+              "Dr"
+            ],
+            "suffix": [
+              "MD"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Patient/da4f55cf-cd70-429d-a8c4-baea2e29cf5e",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "da4f55cf-cd70-429d-a8c4-baea2e29cf5e",
+        "meta": {
+          "lastUpdated": "2023-11-02T10:46:12+00:00"
+        },
+        "identifier": [
+          {
+            "id": "bf203bb8-9e3e-4671-8f35-3f444a64d8ca",
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "b46af68a-c79a-11e2-b284-107d46e7b2c5"
+                }
+              ],
+              "text": "PatientIdentifier"
+            },
+            "value": "GAN310268"
+          },
+          {
+            "id": "51f6d5c2-dda8-495c-bb11-03c2595e7458",
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "c8f8b408-6f0a-11ed-a837-0242ac120002"
+                }
+              ],
+              "text": "ABHAAddress"
+            },
+            "value": "sankhla2710@sbx"
+          },
+          {
+            "id": "c4af3d11-7571-4bb6-8b58-acf2d1ba80f2",
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "d7e40525-a20d-11ed-bf49-0242ac12000a"
+                }
+              ],
+              "text": "ABHANumber"
+            },
+            "value": "91-7020-7412-2566"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "id": "0d6e60e8-5326-48b9-bc28-824a2794c034",
+            "family": "Sankhla",
+            "given": [
+              "Hardik"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1994",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "id": "6330723d-3929-46f4-98e5-474e46d112d2",
+            "use": "home",
+            "city": "KPM",
+            "district": "MEERUT",
+            "state": "UTTARPRADESH"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Encounter/3cf12305-4797-4880-820c-1af701521913",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "3cf12305-4797-4880-820c-1af701521913",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "WALK IN"
+        },
+        "subject": {
+          "reference": "Patient/da4f55cf-cd70-429d-a8c4-baea2e29cf5e"
+        },
+        "period": {
+          "start": "2016-12-11T00:00:00+05:30"
+        }
+      }
+    },
+    {
+      "fullUrl": "DocumentReference/f39604fc-da47-4e09-abb2-e2f4551e5713",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "f39604fc-da47-4e09-abb2-e2f4551e5713",
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "https://projecteka.in/loinc",
+              "code": "30954-2",
+              "display": "PRESCRIPTION"
+            }
+          ]
+        },
+        "author": [
+          {
+            "reference": "Practitioner/ABHI1234"
+          }
+        ],
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "data": "",
+              "title": "PRESCRIPTION"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Procedure/3bf80c25-feb5-48aa-84cd-fce761bceeac",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "3bf80c25-feb5-48aa-84cd-fce761bceeac",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "https://projecteka.in/sct",
+              "code": "232717009",
+              "display": "Coronary artery bypass grafting"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/da4f55cf-cd70-429d-a8c4-baea2e29cf5e"
+        },
+        "performedDateTime": "2016-12-11T01:00:00+05:30",
+        "asserter": {
+          "reference": "Practitioner/ABHI1234"
+        },
+        "complication": [
+          {
+            "coding": [
+              {
+                "system": "https://projecteka.in/sct",
+                "code": "131148009",
+                "display": "Bleeding"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "CONSENT_MANAGER_ID",
+  "type": "java.lang.String",
+  "description": "A description for 'CONSENT_MANAGER_ID'"
+}]}

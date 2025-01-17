@@ -1,0 +1,233 @@
+server:
+  port: 9011
+  servlet:
+    context-path: /abha
+ 
+
+spring:
+  profiles:
+    active:
+    - DEV
+    #Use this to befriend spring-boot-starter-actuator & springfox-boot-starter
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+HIMS_TENANT_IDS : 1,2,3
+
+#CONSENT_MANAGER_ID FOR PROD
+#CONSENT_MANAGER_ID : ndhm      
+
+#CONSENT_MANAGER_ID FOR SANDBOX
+CONSENT_MANAGER_ID : sbx      
+
+DBURL : jdbc:postgresql://192.168.20.39:5432/abdm_integrated_module
+DBUSERNAME : postgres
+DBPASSWORD : vmed3@dhanushqa
+
+TIME_ZONE : IST
+CLIENTID : SBX_003700
+FILE_PATH : src/main/resources
+CLIENTSECRET : bb322062-10ea-4e59-85d7-20eb3944fb32
+SEND_PHR_NOTIFICATION : https://dev.abdm.gov.in/gateway/v0.5/links/context/notify
+GETSESSION : https://dev.abdm.gov.in/gateway/v0.5/sessions
+CERT : https://healthidsbx.abdm.gov.in/api/v2/auth/cert
+AADHAARGENERATEOTP : https://healthidsbx.abdm.gov.in/api/v2/registration/aadhaar/generateOtp
+AADHAARGENERATEOTPV3 : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+MOBILEGENERATEOTP : https://healthidsbx.abdm.gov.in/api/v2/registration/mobile/generateOtp
+MOBILEGENERATEOPTOFDL : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+AADHAARVERIFYOTP : https://healthidsbx.abdm.gov.in/api/v2/registration/aadhaar/verifyOTP
+AADHAARVERIFYOTPV3 : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+DRIVINGLICENSEREFERREDOTP : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/auth/byAbdm
+ENROLLINGABHAWITHDL : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byDocument
+CONFIRM : https://healthidsbx.abdm.gov.in/api/v2/registration/aadhaar/confirm
+LOGIN-REQUEST : https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/request/otp
+SEARCH-AUTH-METHODS-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/abha/search
+REQUEST-OTP-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/abha/request/otp
+LOGIN-ABHA-OTP-VERIFY : https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/abha/verify
+LOGIN-PROFILE-OTP : https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/verify
+GET-ABHA-PROFILE : https://abhasbx.abdm.gov.in/abha/api/v3/profile/account
+DEMOGRAPHIC-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+GET-ABHA-PROFILE-FOR-VERIFY-FLOW : https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/profile/abha-profile
+FORGOT-ABHA-REQUEST-TO-OTP-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/request/otp
+FORGOT-ABHA-VERIFY-OTP-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/verify
+USER-VERIFY-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/profile/login/verify/user
+SEARCH-BY-ABHA-ADDRESS : https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/abha/search
+GET-ABHA-CARD-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/abha-card
+GET-ABHA-CARD-FOR-VERIFY-FLOW-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/login/profile/abha/phr-card
+MOBILE-NUMBER-UPDATE-REQUEST-OTP-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/request/otp
+ENROL-ABHA-BY-BIOMETRIC-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/byAadhaar
+MOBILE-NUMBER-UPDATE-VERIFY-OTP-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/auth/byAbdm
+SEARCH-ABHA-ACCOUNT : https://abhasbx.abdm.gov.in/abha/api/v3/profile/account/abha/search
+CHECKANDGENERATEMOBILEOTP : https://healthidsbx.abdm.gov.in/api/v2/registration/aadhaar/checkAndGenerateMobileOTP
+VERIFYMOBILEOTP : https://healthidsbx.abdm.gov.in/api/v2/registration/aadhaar/verifyMobileOTP
+CREATEHEALTHIDWITHPREVERIFIED : https://healthidsbx.abdm.gov.in/api/v1/registration/aadhaar/createHealthIdWithPreVerified
+GENERATEMOBILEOTP : https://healthidsbx.abdm.gov.in/api/v1/registration/aadhaar/generateMobileOTP
+CONSENT : true
+CONSENTVERSION : v1.0
+CMSESSIONS : https://dev.abdm.gov.in/cm/sessions
+GETPNGCARD : https://healthidsbx.abdm.gov.in/api/v1/account/getPngCard
+PHR-LINKED : https://healthidsbx.abdm.gov.in/api/v2/account/phr-linked
+EXISTSBYHEALTHID : https://healthidsbx.abdm.gov.in/api/v1/search/existsByHealthId
+MOBILE_VERIFYOTP : https://healthidsbx.abdm.gov.in/api/v2/registration/mobile/verifyOtp
+SEARCHBYHEALTHID : https://healthidsbx.abdm.gov.in/api/v2/search/searchByHealthId
+INIT : https://healthidsbx.abdm.gov.in/api/v1/auth/init
+CONFIRMWITHAADHAROTP : https://healthidsbx.abdm.gov.in/api/v1/auth/confirmWithAadhaarOtp 
+CONFIRMWITHMOBILEOTP : https://healthidsbx.abdm.gov.in/api/v1/auth/confirmWithMobileOTP
+AUTHPASSWORD : https://healthidsbx.abdm.gov.in/api/v1/auth/authPassword
+ACCOUNTPROFILE : https://healthidsbx.abdm.gov.in/api/v1/account/profile
+QRCODE : https://healthidsbx.abdm.gov.in/api/v1/account/qrCode
+FORGOT_GENERATE_AADHAR_OTP : https://healthidsbx.abdm.gov.in/api/v2/forgot/healthId/aadhaar/generateOtp
+FORGOT_VERIFY_AADHAR_OTP : https://healthidsbx.abdm.gov.in/api/v2/forgot/healthId/aadhaar
+FORGOT_VERIFY_MOBILE_OTP : https://healthidsbx.abdm.gov.in/api/v1/forgot/healthId/mobile
+FORGOT_GENERATE_MOBILE_OTP : https://healthidsbx.abdm.gov.in/api/v1/forgot/healthId/mobile/generateOtp
+FORGOT_DEMOGRAPHIC : https://healthidsbx.abdm.gov.in/api/v2/search/searchByMobile
+FORGOT_GENERATE_AADHAR_OTP2 : https://healthidsbx.abdm.gov.in/api/v1/forgot/healthId/aadhaar/generateOtp
+FORGOT_VERIFY_AADHAR_OTP2 : https://healthidsbx.abdm.gov.in/api/v1/forgot/healthId/aadhaar
+CREATE_ABHA_OFFLINE : https://healthidsbx.abdm.gov.in/api/v1/hid/benefit/notify/benefit
+UPDATE_PROFILE : https://healthidsbx.abdm.gov.in/api/v1/hid/benefit/update/profile
+UPDATE_MOBILE :  https://healthidsbx.abdm.gov.in/api/v1/hid/benefit/update/mobile
+#------------------------------------------------------------------------
+CREATE_ABHA : https://healthidsbx.abdm.gov.in/api/v1/hid/benefit/createHealthId/demo/auth
+LINK-PROFILE-DETAILS : https://phrsbx.abdm.gov.in/api/v1/phr/profile/link/profileDetails
+ABHA-ADDRESS-SUGGESTIONS : https://phrsbx.abdm.gov.in/api/v1/phr/registration/phr/suggestion
+ABHA-ADDRESS-SUGGESTIONS-V3 : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/suggestion
+CREATE-CUSTOM-ABHA-ADDRESS : https://abhasbx.abdm.gov.in/abha/api/v3/enrollment/enrol/abha-address
+ISEXISTS-ABHA-ADDRESS : https://abhasbx.abdm.gov.in/abha/api/v3/phr/web/enrollment/isExists
+CREATE-PHR-ADDRESS : https://phrsbx.abdm.gov.in/api/v1/phr/registration/hid/create-phr-address
+FILE_URL : https://surveillance-dev.dhanushinfotech.com/ihat-files/uploadFile?fileType=
+URL : http://smsaanvi.alert.ind.in/sms_api/sendsms.php?username=
+USERNAME : indianhealth
+PASSWORD : 12345678
+SENDERNAME : DGMHUP
+MOBILESMSURL : http://smsaanvi.alert.ind.in/sms_api/smsUnicode.php?username=
+MINI_URL : https://surveillance-dev.dhanushinfotech.com/ihat-mu/save
+CREATE-CALLBACK-BRIDGE : https://dev.abdm.gov.in/devservice/v1/bridges
+
+HIMS-JASPER-URL : https://himsstaging.dhanushhealthcare.com/op-billing/v1/report/jaspergenrate
+
+FETCH-USER-MODES : https://dev.abdm.gov.in/gateway/v0.5/users/auth/fetch-modes
+ 
+ON-FETCH-USER-MODES-CALL-BACK : https://dev.abdm.gov.in/gateway/v0.5/users/auth/on-fetch-modes
+
+AUTH-INIT : https://dev.abdm.gov.in/gateway/v0.5/users/auth/init
+
+AUTH-CONFIRM : https://dev.abdm.gov.in/gateway/v0.5/users/auth/confirm
+
+ADD-CONTEXT : https://dev.abdm.gov.in/gateway/v0.5/links/link/add-contexts
+
+HIP-ON-NOTIFY : https://dev.abdm.gov.in/gateway/v0.5/consents/hip/on-notify
+
+HIP-ON-NOTIFY-V3 : https://dev.abdm.gov.in/hiecm/api/v3/consent/request/hip/on-notify
+
+HIP-ON-DISCOVER : https://dev.abdm.gov.in/gateway/v0.5/care-contexts/on-discover
+
+ON-HIP-REQUEST : https://dev.abdm.gov.in/gateway/v0.5/health-information/hip/on-request
+
+HEALTH-INFORMATION-ON-REQUEST : https://dev.abdm.gov.in/hiecm/api/v3/data-flow/health-information/hip/on-request
+
+ON-SHARE-PROFILE : https://dev.abdm.gov.in/gateway/v0.5/patients/profile/on-share
+
+LINKS-ON-INIT : https://dev.abdm.gov.in/gateway/v0.5/links/link/on-init
+
+LINKS-ON-CONFIRM :  https://dev.abdm.gov.in/gateway/v0.5/links/link/on-confirm
+
+USER-AUTH-ON-NOFITY : https://dev.abdm.gov.in/gateway/v0.5/users/auth/on-notify
+
+PATIENT-SMS-NOTIFY : https://dev.abdm.gov.in/gateway/v0.5/patients/sms/notify2
+
+FILE-TRANSFER-NOTIFY : https://dev.abdm.gov.in/gateway/v0.5/health-information/notify
+HEALTH-INFORMATION-NOTIFY : https://dev.abdm.gov.in/hiecm/api/v3/data-flow/health-information/notify
+
+PATIENT-STATUS-NOTIFY : https://dev.abdm.gov.in/gateway/v0.5/patients/status/notify
+
+
+PATIENT-STATUS-ON-NOTIFY : https://dev.abdm.gov.in/gateway/v0.5/patients/status/on-notify
+
+LINK-HFR-WITH-HRP: https://dev.ndhm.gov.in/gateway/v1/bridges/addUpdateServices
+
+RESEND-AADHAAR-OTP : https://healthidsbx.abdm.gov.in/api/v2/registration/aadhaar/resendAadhaarOtp
+
+RESEND-MOBILE-OTP : https://healthidsbx.abdm.gov.in/api/v2/registration/mobile/resendOtp
+
+GENERATE-LINK-TOKEN : https://dev.abdm.gov.in/hiecm/api/v3/token/generate-token
+
+LINK-CARE-CONTEXT-V3: https://dev.abdm.gov.in/hiecm/api/v3/link/carecontext
+#--------------------------M3 urls--------------------------
+CONSENT_REQUEST_INIT : https://dev.abdm.gov.in/gateway/v0.5/consent-requests/init
+
+FIND_PATIENT : https://dev.abdm.gov.in/gateway/v0.5/patients/find
+
+CONSENT_STATUS : https://dev.abdm.gov.in/gateway/v0.5/consent-requests/status
+
+CONSENTS_HIU_ON_NOTIFY : https://dev.abdm.gov.in/gateway/v0.5/consents/hiu/on-notify
+
+CONSENTS_FETCH : https://dev.abdm.gov.in/gateway/v0.5/consents/fetch
+
+CM_REQUEST : https://dev.abdm.gov.in/gateway/v0.5/health-information/cm/request
+HEALTH_INFORMATION_REQUEST : https://dev.abdm.gov.in/hiecm/api/v3/data-flow/health-information/request
+
+DATA_PUSH_URL : https://surveillance-dev.dhanushinfotech.com/ihat-ndhm/v0.5/health-information/transfer
+
+VALIDATEOTP : https://telemedicine-uk-training.vmedtm.com/notifications/validateOTP?TENANT_ID=50
+GENERATEOTP : https://telemedicine-uk-training.vmedtm.com/notifications/sendotpnotification?TENANT_ID=50
+
+FHIR_FILE_PATH : /usr/src/myapp
+#-----------------------V3 APIS--------------------------------------------
+CONSENTS_HIU_ON_NOTIFY_V3 : https://dev.abdm.gov.in/hiecm/api/v3/consent/request/hiu/on-notify
+CONSENT_REQUEST_INIT_V3 : https://dev.abdm.gov.in/hiecm/api/v3/consent/request/init
+CONSENT_STATUS_V3: https://dev.abdm.gov.in/hiecm/api/v3/consent/request/status
+GENERATE_LINK_TOKEN_V3 : https://dev.abdm.gov.in/hiecm/api/v3/token/generate-token
+LINK_CARE_CONTEXT_V3 : https://dev.abdm.gov.in/hiecm/api/v3/link/carecontext
+CARE_CONTEXT_DISCOVER : https://dev.abdm.gov.in/api/v3/patient/care-context/discover
+HIP_LINKING_BASE_URL : https://dev.abdm.gov.in
+CARE_CONTEXT_DISCOVER_V3 : https://dev.abdm.gov.in/hiecm/api/v3/user-initiated-linking/patient/care-context/discover
+CONSENTS_FETCH_V3: https://dev.abdm.gov.in/hiecm/api/v3/consent/fetch
+CARE-CONTEXT-V3-ON-DISCOVER : https://dev.abdm.gov.in/hiecm/api/v3/user-initiated-linking/patient/care-context/on-discover
+CARE-CONTEXT-V3-LINKS-ON-INIT: https://dev.abdm.gov.in/hiecm/api/v3/user-initiated-linking/link/care-context/on-init
+CARE-CONTEXT-V3-LINKS-ON-CONFIRM: https://dev.abdm.gov.in/hiecm/api/v3/user-initiated-linking/link/care-context/on-confirm
+#--------------------------------------------------------------------------
+
+#========================VMED-URLS for HIMS_TM functionality===============start=======================
+VMED_URL : https://vmed.dhanushsoftech.com/registration/
+VMED_GET_DATA_NOTIFY : https://vmed.dhanushsoftech.com/registration/milestone2/get-care-contexts-for-hims?TENANT_ID=52
+VMED_GET_DATA_REQUEST : https://vmed.dhanushsoftech.com/registration/milestone2/get-records-for-data-push?TENANT_ID=52
+VMED_GET_DATA_DISCOVERY : https://vmed.dhanushsoftech.com/registration/milestone2/get-un-linked-care-contexts?TENANT_ID=52
+VMED_SAVE_CARE_CONTEXST_LOGS : https://vmed.dhanushsoftech.com/registration/milestone2/save-care-context-logs?TENANT_ID=52
+VMED_UPDATE_INTERACTION_STATUS : https://vmed.dhanushsoftech.com/registration/milestone2/update-link-care-context-status?TENANT_ID=52
+VMED_CARE_CONTEXT_BY_INTERACTION_IDS : https://vmed.dhanushsoftech.com/registration/milestone2/get-care-contexts-by-interactions?TENANT_ID=52
+#========================VMED-URLS for HIMS_TM functionality===============end==========================
+--- 
+#========================VMED-URLS for HIMS_TM functionality===============start=======================
+VMED_URL : https://vmedproqaccad.dhanushinfotech.com/registration/
+VMED_GET_DATA_NOTIFY : https://vmedproqaccad.dhanushinfotech.com/registration/milestone2/get-care-contexts-for-hims?TENANT_ID=30
+VMED_GET_DATA_REQUEST : https://vmedproqaccad.dhanushinfotech.com/registration/milestone2/get-records-for-data-push?TENANT_ID=30
+VMED_GET_DATA_DISCOVERY : https://vmedproqaccad.dhanushinfotech.com/registration/milestone2/get-un-linked-care-contexts?TENANT_ID=30
+VMED_SAVE_CARE_CONTEXST_LOGS : https://vmedproqaccad.dhanushinfotech.com/registration/milestone2/save-care-context-logs?TENANT_ID=30
+VMED_UPDATE_INTERACTION_STATUS : https://vmedproqaccad.dhanushinfotech.com/registration/milestone2/update-link-care-context-status?TENANT_ID=30
+VMED_CARE_CONTEXT_BY_INTERACTION_IDS : https://vmedproqaccad.dhanushinfotech.com/registration/milestone2/get-care-contexts-by-interactions?TENANT_ID=30
+#========================VMED-URLS for HIMS_TM functionality===============end==========================
+
+EUA_SUBSCRIBER_ID : dhanushhealthcare.eua
+EUA_PUBLIC_KEY_ID : dhanushhealthcare.euapid
+HSPA_SUBSCRIBER_ID : dhanushhealthcare.hspa
+HSPA_PUBLIC_KEY_ID : dhanushhealthcare.hspapid
+
+PRIVATE_KEY: MC4CAQAwBQYDK2VwBCIEIL7yeqEnuUyurf8O6FdR9RJNUQJxqhxUnwQyClvDhcPG
+PUBLIC_KEY: MCowBQYDK2VwAyEA6rY5K1CI7Fqgl4F8bUdOnkWgPJ9T6QHvEH1fMmSszDg=
+PROVIDER_ID: dhanushhealthcare.hspa
+PROVIDER_URI: https://vmedpromicrositesqa.dhanushhealthcare.com/abha
+
+#=========================================UHI=====================
+
+SEARCH : https://uhigatewaysandbox.abdm.gov.in/api/v1/search
+ON_SEARCH : https://uhigatewaysandbox.abdm.gov.in/api/v1/on_search
+SElECT : https://uhigateway.abdm.gov.in/api/v1/select
+UHI_INIT: https://abha-ndhm-core.mbstg.in/hspa/init
+UHI_CONFIRM : https://abha-ndhm-core.mbstg.in/hspa/confirm
+UHI_CANCEL : https://abha-ndhm-core.mbstg.in/hspa/cancel
+UHI_STATUS : https://abha-ndhm-core.mbstg.in/hspa/status
+
+
+#UHI: https://uhigateway.abdm.gov.in/api/v1/search
+
